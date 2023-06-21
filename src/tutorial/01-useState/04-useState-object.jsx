@@ -8,7 +8,11 @@ const UseStateObjectExample = () => {
   });
 
   const displayPerson = () => {
-    setPerson({ name: "John", age: 28, hobby: "Playing games" });
+    // Update all value of the object
+    // setPerson({ name: "John", age: 28, hobby: "Playing games" });
+
+    // Update only one value in the object other value will be the default
+    setPerson({ ...person, name: "Kali" });
   };
   return (
     <>
