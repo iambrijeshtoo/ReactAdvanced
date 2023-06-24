@@ -4,15 +4,15 @@ const UseEffectMultiple = () => {
   const [firstValue, setFirstValue] = useState(0);
   const [secondValue, setSecondValue] = useState(0);
 
-  // When you add dependency array inside the useEffect as a second argument it will invoke the first argument which function as many value are inside the dependency array.
-  // For example we are using counting here as many times we click on button and increment happen at that same times useEffect will executed.
-  // If you click button ten time it will show 10 increments and ten times "I'm first useEffect".
+  // When you add dependency array inside the useEffect as a second parameter it will invoke the first parameter which is call back function. As many time as many value are inside the dependency array.
+  // For example we are using counting here as second parameter (dependency array). As many times we click on button. The increment happen and that many times useEffect will executed.
+  // If you click button 10 time it will show 10 increments and 10 times "I'm first useEffect".
   useEffect(() => {
     console.log("I'm first useEffect");
   }, [firstValue]);
 
   useEffect(() => {
-    console.log("I'm second useEffect");
+    console.log("I' second useEffect");
   }, [secondValue]);
 
   return (
