@@ -1,10 +1,10 @@
 import "./App.css";
-import ToggleChallenge from "./tutorial/03-conditional-rendering/06-toggle-challenge";
+import CleanupFunction from "./tutorial/02-useEffect/05-cleanup-function";
 
 function App() {
   return (
     <div className="container">
-      <ToggleChallenge />
+      <CleanupFunction />
     </div>
   );
 }
