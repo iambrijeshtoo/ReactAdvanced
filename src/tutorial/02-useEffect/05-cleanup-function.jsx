@@ -21,16 +21,11 @@ const CleanupFunction = () => {
 
 const MyComponent = () => {
   useEffect(() => {
-    // Task running
-    const task = setInterval(() => {
-      console.log("task running");
-    }, 1000);
-
-    // Cleanup function run after the component render and before the useEffect
-    return () => {
-      clearInterval(task);
-      console.log("task clean");
+    const someFunction = () => {
+      // some logic
     };
+    window.addEventListener("scroll", someFunction);
+    return () => window.removeEventListener("scroll", someFunction);
   }, []);
 
   return <h1>My Component</h1>;
