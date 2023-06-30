@@ -1,10 +1,13 @@
 import "./App.css";
-import CleanupFunction from "./tutorial/02-useEffect/05-cleanup-function";
+import Navbar from "./tutorial/04-project-structure/Navbar";
+import { About, Home } from "./tutorial/04-project-structure/Pages";
 
 function App() {
   return (
     <div className="container">
-      <CleanupFunction />
+      <Navbar />
+      <Home />
+      <About />
     </div>
   );
 }
