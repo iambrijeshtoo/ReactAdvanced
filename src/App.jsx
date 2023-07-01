@@ -1,13 +1,10 @@
 import "./App.css";
-// import ExportGroup from "./tutorial/04-project-structure/Example";
-import { Home, About } from "./tutorial/04-project-structure/Pages";
+import List from "./tutorial/05-using-javascript/List";
 
 function App() {
   return (
     <div className="container">
-      <Home />
-      <About />
-      {/* <ExportGroup /> */}
+      <List />
     </div>
   );
 }
