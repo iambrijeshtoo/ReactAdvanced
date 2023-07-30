@@ -7,8 +7,6 @@ const ControlledInputs = () => {
   const handleChange = (e) => {
     // console.log(e.target.name);
     // console.log(e.target.email);
-    setName(e.target.name);
-    setEmail(e.target.email);
   };
 
   return (
@@ -23,7 +21,7 @@ const ControlledInputs = () => {
           id="name"
           className="form-input"
           value={name}
-          onChange={handleChange}
+          onChange={(e) => setName(e.target.name)}
         />
       </div>
       <div className="form-row">
@@ -35,7 +33,7 @@ const ControlledInputs = () => {
           id="email"
           className="form-input"
           value={email}
-          onChange={handleChange}
+          onChange={(e) => setEmail(e.target.email)}
         />
       </div>
       <button type="submit" className="btn btn-block">
