@@ -1,10 +1,10 @@
 import "./App.css";
-import ControlledInputs from "./tutorial/06-forms/01-controlled-inputs";
+import UserChallenge from "./tutorial/06-forms/02-user-challenge";
 
 function App() {
   return (
     <div className="container">
-      <ControlledInputs />
+      <UserChallenge />
     </div>
   );
 }
