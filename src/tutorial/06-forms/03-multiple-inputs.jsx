@@ -6,6 +6,9 @@ const MultipleInputs = () => {
     email: "",
     password: "",
   });
+
+  const handelChange = () => {};
+
   return (
     <div>
       <form className="form">
@@ -15,21 +18,39 @@ const MultipleInputs = () => {
           <label htmlFor="name" className="form-label">
             name
           </label>
-          <input type="text" className="form-input" id="name" />
+          <input
+            type="text"
+            className="form-input"
+            id="name"
+            value={user.name}
+            onChange={handelChange}
+          />
         </div>
         {/* Email */}
         <div className="form-row">
           <label htmlFor="email" className="form-label">
             email
           </label>
-          <input type="email" className="form-input" id="email" />
+          <input
+            type="email"
+            className="form-input"
+            id="email"
+            value={user.email}
+            onChange={handelChange}
+          />
         </div>
         {/* Password */}
         <div className="form-row">
           <label htmlFor="password" className="form-label">
             password
           </label>
-          <input type="password" className="form-input" id="password" />
+          <input
+            type="password"
+            className="form-input"
+            id="password"
+            value={user.password}
+            onChange={handelChange}
+          />
         </div>
       </form>
     </div>
