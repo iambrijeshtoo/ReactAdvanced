@@ -7,11 +7,18 @@ const MultipleInputs = () => {
     password: "",
   });
 
-  const handelChange = () => {};
+  const handelChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
+  const handelSubmit = (e) => {
+    e.preventDefault();
+    console.log(user);
+  };
 
   return (
     <div>
-      <form className="form">
+      <form className="form" onSubmit={handelSubmit}>
         <h2>MultipleInputs</h2>
         {/* name */}
         <div className="form-row">
@@ -24,6 +31,7 @@ const MultipleInputs = () => {
             id="name"
             value={user.name}
             onChange={handelChange}
+            name="name"
           />
         </div>
         {/* Email */}
@@ -37,6 +45,7 @@ const MultipleInputs = () => {
             id="email"
             value={user.email}
             onChange={handelChange}
+            name="email"
           />
         </div>
         {/* Password */}
@@ -50,6 +59,7 @@ const MultipleInputs = () => {
             id="password"
             value={user.password}
             onChange={handelChange}
+            name="password"
           />
         </div>
       </form>
