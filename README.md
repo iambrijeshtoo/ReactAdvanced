@@ -46,4 +46,4 @@
 6. Forms
    1. Controlled inputs
    2. User challenge
-   3. Multiple inputs
+   3. Checkbox

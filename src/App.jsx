@@ -1,10 +1,10 @@
 import "./App.css";
-import MultipleInputs from "./tutorial/06-forms/03-multiple-inputs";
+import OtherInputs from "./tutorial/06-forms/04-other-inputs";
 
 function App() {
   return (
     <div className="container">
-      <MultipleInputs />
+      <OtherInputs />
     </div>
   );
 }

@@ -62,6 +62,9 @@ const MultipleInputs = () => {
             name="password"
           />
         </div>
+        <button type="submit" className="btn btn-block">
+          submit
+        </button>
       </form>
     </div>
   );
